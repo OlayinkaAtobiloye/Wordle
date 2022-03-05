@@ -40,7 +40,7 @@ const Game = (props) => {
       <Keyboard />
       {showModal ? <Instructions /> : null}
       {props.gameOver ? <GameOver pass={props.pass} /> : null}
-      {props.gameOver & showWord ? <p className="alert">{props.word}</p> : null}
+      {props.gameOver & showWord &!props.pass ? <p className="alert">{props.word}</p> : null}
     </main>
   );
 };

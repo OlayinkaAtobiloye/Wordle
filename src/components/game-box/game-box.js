@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 const GameContainer = (props) => {
   return (
-    <div>
+    <div className="gamebox">
       <GameTile word={props.word1} realword={props.word} row="1" />
       <GameTile word={props.word2} realword={props.word} row="2" />
       <GameTile word={props.word3} realword={props.word} row="3" />

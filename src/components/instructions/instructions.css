@@ -12,6 +12,7 @@
 
 header {
   width: 100%;
+  flex-basis: 20%;
 }
 
 .gameInstructions {
@@ -47,4 +48,18 @@ header {
 }
 
 @media (max-width: 737px) {
+  .gameInstructions{
+    width: 80%;
+  }
+
+  .gamebox{
+    flex-basis: 40%;
+  }
+  header{
+    flex-basis: 10%;
+  }
+
+  .keyboard {
+    flex-basis: 40% !important
+  }
 }

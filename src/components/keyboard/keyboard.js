@@ -26,7 +26,7 @@ class Keyboard extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="keyboard">
         <div className="key-row" onClick={this.onEdit}>
           <button
             data-value="Q"
@@ -148,7 +148,8 @@ class Keyboard extends React.Component {
         <div className="key-row" onClick={this.onEdit}>
           <button
             data-check="\n"
-            style={{ backgroundColor: this.props.letterColors["\n"] }}
+            style={{ backgroundColor: this.props.letterColors["\n"],
+          'min-width': '50px' }}
           >
             ENTER
           </button>

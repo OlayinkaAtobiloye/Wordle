@@ -74,7 +74,7 @@ const Instructions = () => {
           <p>
             <strong>
               You can play as many WORDLE as you like! <strong></strong>
-              Click to start.
+              Click anywhere to start.
             </strong>
           </p>
         </div>

@@ -26,8 +26,12 @@ button {
   touch-action: manipulation;
 }
 
+.keyboard{
+  flex-basis: 30%;
+}
+
 @media (max-width: 737px) {
   button {
-    min-width: 32px;
+    min-width: 25px;
   }
 }
