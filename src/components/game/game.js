@@ -13,6 +13,7 @@ const Game = (props) => {
 
   useEffect(() => {
     props.onset();
+    setShowWord(true)
   }, [props.tryAgain]);
 
   if (props.alert) {

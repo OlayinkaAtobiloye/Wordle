@@ -12,7 +12,7 @@ const GameOver = (props) => {
             </p>
             <p
               onClick={props.setRefresh}
-              style={{ color: "blue", textDecoration: "underline" }}
+              style={{ color: "blue", textDecoration: "underline" , cursor: "pointer"}}
             >
               Play again
             </p>
@@ -24,7 +24,7 @@ const GameOver = (props) => {
             </p>
             <p
               onClick={props.setRefresh}
-              style={{ color: "blue", textDecoration: "underline" }}
+              style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}
             >
               Try again
             </p>
