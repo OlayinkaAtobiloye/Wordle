@@ -27,7 +27,7 @@ class Keyboard extends React.Component {
   render() {
     return (
       <section className="keyboard">
-        <div className="key-row" onClick={this.onEdit}>
+        <div className="key-row row-one" onClick={this.onEdit}>
           <button
             data-value="Q"
             style={{ backgroundColor: this.props.letterColors["Q"] }}
@@ -89,7 +89,7 @@ class Keyboard extends React.Component {
             P
           </button>
         </div>
-        <div className="key-row" onClick={this.onEdit}>
+        <div className="key-row row-two" onClick={this.onEdit}>
           <button
             data-value="A"
             style={{ backgroundColor: this.props.letterColors["A"] }}
@@ -145,11 +145,12 @@ class Keyboard extends React.Component {
             L
           </button>
         </div>
-        <div className="key-row" onClick={this.onEdit}>
+        <div className="key-row row-three" onClick={this.onEdit}>
           <button
             data-check="\n"
-            style={{ backgroundColor: this.props.letterColors["\n"],
-          'min-width': '50px' }}
+            style={{
+              "min-width": "50px",
+            }}
           >
             ENTER
           </button>
@@ -195,12 +196,7 @@ class Keyboard extends React.Component {
           >
             M
           </button>
-          <button
-            data-value="DEL"
-            style={{ backgroundColor: this.props.letterColors["M"] }}
-          >
-            DEL
-          </button>
+          <button data-value="DEL">DEL</button>
         </div>
       </section>
     );

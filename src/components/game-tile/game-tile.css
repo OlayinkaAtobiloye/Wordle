@@ -18,18 +18,21 @@
 }
 
 .green {
-  background-color: green;
+  background-color: #6aaa64;
   color: #ffffff;
+  border: none;
 }
 
 .grey {
-  background-color: grey;
+  background-color: #787c7e;
   color: #ffffff;
+  border: none;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #c9b458;
   color: #ffffff;
+  border: none;
 }
 
 @media (max-width: 737px) {

@@ -6,13 +6,13 @@ class GameTile extends React.Component {
   checkvalidity = (index) => {
     if (this.props.current > this.props.row) {
       if (this.props.word[index] == this.props.realword[index]) {
-        this.props.setkeycolor(this.props.word[index], "green");
+        this.props.setkeycolor(this.props.word[index], "#6aaa64");
         return "tile green";
       } else if (this.props.realword.includes(this.props.word[index])) {
-        this.props.setkeycolor(this.props.word[index], "yellow");
+        this.props.setkeycolor(this.props.word[index], "#c9b458");
         return "tile yellow";
       } else {
-        this.props.setkeycolor(this.props.word[index], "grey");
+        this.props.setkeycolor(this.props.word[index], "#787c7e");
         return "tile grey";
       }
     }
